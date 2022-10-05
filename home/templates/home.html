@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <h1>Welcome to the IT Ticketing System {{ user.get_full_name }}</h1>
+    {% else %}
+        <h1>Welcome to the IT Ticketing System</h1>
+    {% endif %}
+    <p>At Circle Logistics IT We pride ourselves on our attentive nature and willingness to help and serve.</p>
+    
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+    <h1><u>Ticket {{ ticket.id }} Information:</u></h1>
+
+    <table class = "table table-bordered mt-3">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Date Submitted</th>
+                <th>Created By</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ ticket.title }}</td>
+                <td>{{ ticket.type }}</td>
+                <td>{{ ticket.description }}</td>
+                <td>{{ ticket.created }}</td>
+                <td>{{ ticket.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href = "{% url 'ticket.completed' pk=ticket.id %}" class = "btn btn-secondary my-5">Complete Ticket</a>
+
+{% endblock%}
