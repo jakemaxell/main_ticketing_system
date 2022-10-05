@@ -1,0 +1,1 @@
+web: gunicorn ticketing_system.wsgi
