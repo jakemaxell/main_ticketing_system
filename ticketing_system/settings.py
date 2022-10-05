@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-2()di^p1&yw972*e5l*0fdone&q%vim7a65ag-$auqpbz2eg+p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'it-ticketing-app.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'it-ticketing-app.herokuapp.com']
 
 
 # Application definition
